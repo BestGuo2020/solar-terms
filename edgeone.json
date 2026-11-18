@@ -11,6 +11,14 @@
     {
       "source": "/gpt-6.2-astra/",
       "destination": "/gpt-6.2-astra/index.html"
+    },
+    {
+      "source": "/gpt-6.1-sol/",
+      "destination": "/gpt-6.1-sol/index.html"
+    },
+    {
+      "source": "/gpt-6.2-sol/",
+      "destination": "/gpt-6.2-sol/index.html"
     }
   ]
 }
