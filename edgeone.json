@@ -1,0 +1,16 @@
+{
+  "nodeVersion": "22.17.1",
+  "installCommand": "npm run install:sites",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/gpt-6-astra/",
+      "destination": "/gpt-6-astra/index.html"
+    },
+    {
+      "source": "/gpt-6.2-astra/",
+      "destination": "/gpt-6.2-astra/index.html"
+    }
+  ]
+}

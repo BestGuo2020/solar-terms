@@ -1,0 +1,10 @@
+{
+  "name": "solar-terms",
+  "private": true,
+  "scripts": {
+    "install:sites": "npm --prefix gpt-6-astra ci --include=dev && npm --prefix gpt-6.2-astra ci --include=dev",
+    "build": "npm run build:astra && npm run build:astra62 && node -e \"require('node:fs').copyFileSync('dist/gpt-6.2-astra/index.html', 'dist/index.html')\"",
+    "build:astra": "npm --prefix gpt-6-astra run build -- --base=/gpt-6-astra/ --outDir=../dist/gpt-6-astra --emptyOutDir",
+    "build:astra62": "npm --prefix gpt-6.2-astra run build -- --base=/gpt-6.2-astra/ --outDir=../dist/gpt-6.2-astra --emptyOutDir"
+  }
+}
