@@ -24,6 +24,7 @@ import {
   chapterHTML,
   sourceHTML,
   detailHTML,
+  illustrationHTML,
   artwork,
   seasonNames,
 } from "./reading.js";
@@ -144,7 +145,7 @@ function updateCard() {
   if (cardKey === key) return;
   cardKey = key;
   $("#term-card").innerHTML =
-    `<div class="term-cover" style="background-image:url('${artwork[t.season]}')"><div class="cover-shade"></div><div class="cover-top"><span class="archive-flag"><i></i>${at("当前节气", "Active term")}</span><span class="term-count">${String(model.index + 1).padStart(2, "0")} / 24</span></div><div class="cover-name"><div><h2>${lang ? t.en : t.zh}</h2><p>${lang ? t.zh : t.en}</p></div><span class="season-chip">${icon(seasonSymbols[t.season], 13)}${seasonNames[t.season][lang]}</span></div></div>
+    `<div class="term-cover">${illustrationHTML(t, lang, "card-art")}<div class="cover-shade"></div><div class="cover-top"><span class="archive-flag"><i></i>${at("当前节气", "Active term")}</span><span class="term-count">${String(model.index + 1).padStart(2, "0")} / 24</span></div><div class="cover-name"><div><h2>${lang ? t.en : t.zh}</h2><p>${lang ? t.zh : t.en}</p></div><span class="season-chip">${icon(seasonSymbols[t.season], 13)}${seasonNames[t.season][lang]}</span></div></div>
   <div class="term-info"><div class="data-line"><span>${icon("sun", 15)}${at("起始太阳黄经", "Starting longitude")}</span><strong>${t.longitude}°</strong></div>
   <div class="data-line"><span>${icon("clock", 15)}${at("交节时刻", "Term begins")}</span><b>${minuteStamp(model.start)}</b></div>
   <section class="nature"><h3>${icon("leaf", 15)}${at("物候观察", "Field notes")}</h3><p>${t.nature[lang]}</p></section>
@@ -387,6 +388,19 @@ function translate() {
   updateTime();
   if (panel) openPanel(panel);
 }
+// A failed term image can fall back to its seasonal landscape once.
+app.addEventListener("error", (event) => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.hasAttribute("data-term-art")) return;
+  if (image.dataset.fallback) {
+    const fallback = image.dataset.fallback;
+    delete image.dataset.fallback;
+    image.alt = at("该季节的山水插画", "Landscape illustration for this season");
+    image.src = fallback;
+  } else {
+    image.alt = at("节气插画暂不可用", "Solar term illustration unavailable");
+  }
+}, true);
 scene = createScene({
   host: $("#scene-host"),
   starCanvas: $("#stars"),

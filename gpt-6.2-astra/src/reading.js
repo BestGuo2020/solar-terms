@@ -10,6 +10,12 @@ export const seasonNames = [
 export const artwork = ["spring", "summer", "landscape", "winter"].map(
   (name) => `${import.meta.env.BASE_URL}art/${name}.webp`,
 );
+export function illustrationHTML(term, lang, className) {
+  const src = `${import.meta.env.BASE_URL}art/${term.illustration}`;
+  const fallback = artwork[term.season];
+  const fallbackAttr = src === fallback ? "" : ` data-fallback="${fallback}"`;
+  return `<img class="${className}" data-term-art src="${src}" alt="${term.illustrationAlt[lang]}" decoding="async"${fallbackAttr}>`;
+}
 export const chapters = [
   ["历史渊源", "Origins", "HISTORY", "book"],
   ["文化价值", "Living traditions", "CULTURE", "leaf"],
@@ -124,8 +130,8 @@ export function sourceHTML(lang) {
     at(["影像与资料", "Imagery and references"]) +
     "</h3><p>" +
     at([
-      "地表与云层影像取自 NASA GSFC Blue Marble（2002），作者 Reto Stöckli、Robert Simmon，依 NASA 媒体使用准则作教育展示。云图为历史卫星合成影像。四季山水插画由本项目使用 ImageGen 生成。",
-      "Surface and cloud imagery comes from NASA GSFC’s Blue Marble (2002), by Reto Stöckli and Robert Simmon, used for education under NASA media guidelines. The clouds are a historical satellite composite. The seasonal landscape illustrations were generated for this project with ImageGen.",
+      "地表与云层影像取自 NASA GSFC Blue Marble（2002），作者 Reto Stöckli、Robert Simmon，依 NASA 媒体使用准则作教育展示。云图为历史卫星合成影像。24 幅节气插画由本项目使用 ImageGen 绘制，分别展现不同地区的物候与农事。",
+      "Surface and cloud imagery comes from NASA GSFC’s Blue Marble (2002), by Reto Stöckli and Robert Simmon, used for education under NASA media guidelines. The clouds are a historical satellite composite. The 24 solar term illustrations were generated for this project with ImageGen and depict regional examples of seasonal changes and farming.",
     ]) +
     '</p></section><ul class="source-links">' +
     [
@@ -169,9 +175,8 @@ export function sourceHTML(lang) {
 export function detailHTML(term, index, lang, when) {
   const at = (p) => p[lang];
   return (
-    '<div class="detail-cover" style="background-image:url(' +
-    artwork[term.season] +
-    ')"></div><div class="detail-meta"><span>' +
+    illustrationHTML(term, lang, "detail-cover") +
+    '<div class="detail-meta"><span>' +
     at(seasonNames[term.season]) +
     " · " +
     String(index + 1).padStart(2, "0") +

@@ -52,7 +52,7 @@ npm test
 
 历史与文化说明参考香港天文台、中国非物质文化遗产网及 UNESCO。气候和农事举例注明适用地区，诗词随文标出作者与篇名。完整资料入口在页面右上角及文末。[UNESCO 非遗名录](https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-of-time-and-practices-developed-in-china-through-observation-of-the-suns-annual-motion-00647) · [香港天文台的节气与黄经说明](https://www.hko.gov.hk/en/gts/time/24solarterms.htm)
 
-地表和云层取自 NASA Goddard Space Flight Center 的 Blue Marble（2002），署名 Reto Stöckli、Robert Simmon，依 NASA 媒体使用准则用于教育展示。四季山水插画由本项目使用 ImageGen 生成。[NASA 影像来源](https://science.nasa.gov/earth/earth-observatory/the-blue-marble-true-color-global-imagery-at-1km-resolution/) · [NASA 媒体使用准则](https://www.nasa.gov/nasa-brand-center/images-and-media/)
+地表和云层取自 NASA Goddard Space Flight Center 的 Blue Marble（2002），署名 Reto Stöckli、Robert Simmon，依 NASA 媒体使用准则用于教育展示。24 幅节气插画由本项目使用 ImageGen 生成，按所选节气载入。[插画文件与绘制提示](docs/illustrations.md) · [NASA 影像来源](https://science.nasa.gov/earth/earth-observatory/the-blue-marble-true-color-global-imagery-at-1km-resolution/) · [NASA 媒体使用准则](https://www.nasa.gov/nasa-brand-center/images-and-media/)
 
 ## 验收范围
 

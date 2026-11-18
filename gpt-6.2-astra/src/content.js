@@ -3,6 +3,8 @@
 const entries = [
   {
     zh: "立春",
+    illustration: "spring.webp",
+    illustrationAlt: ["梅花映着初绿的溪谷。", "Plum blossom overlooks a valley just turning green."],
     en: "Beginning of Spring",
     meaning: [
       "“立”是开始。传统历法从这一天算起春季，北方许多地方仍在过冬。",
@@ -23,6 +25,8 @@ const entries = [
   },
   {
     zh: "雨水",
+    illustration: "terms/yushui.webp",
+    illustrationAlt: ["细雨落在江南石桥和水面上。", "Spring rain falls on a stone bridge and a canal in Jiangnan."],
     en: "Rain Water",
     meaning: [
       "名字描绘初春冰雪消融、雨水渐多的景象。",
@@ -43,6 +47,8 @@ const entries = [
   },
   {
     zh: "惊蛰",
+    illustration: "terms/jingzhe.webp",
+    illustrationAlt: ["桃枝间的小虫与雨后春色。", "Insects among peach branches after spring rain."],
     en: "Awakening of Insects",
     meaning: [
       "“蛰”指动物藏伏越冬。古人用一声春雷写下小生灵重又活动的景象。",
@@ -63,6 +69,8 @@ const entries = [
   },
   {
     zh: "春分",
+    illustration: "terms/chunfen.webp",
+    illustrationAlt: ["江南村落旁的油菜花田。", "Yellow rapeseed fields surround a Jiangnan village."],
     en: "Spring Equinox",
     meaning: [
       "太阳自南向北越过天赤道。传统春季行至中点，各地昼夜大致等长。",
@@ -83,6 +91,8 @@ const entries = [
   },
   {
     zh: "清明",
+    illustration: "terms/qingming.webp",
+    illustrationAlt: ["江南山坡的春茶采摘。", "Pickers gather spring tea on a Jiangnan hillside."],
     en: "Clear and Bright",
     meaning: [
       "“清明”写春日天地清朗的景象。这一天也承载着祭祖怀亲的节日传统。",
@@ -103,6 +113,8 @@ const entries = [
   },
   {
     zh: "谷雨",
+    illustration: "terms/guyu.webp",
+    illustrationAlt: ["春雨中的水稻秧田。", "Young rice seedlings in spring rain."],
     en: "Grain Rain",
     meaning: [
       "暮春雨水滋养新苗，“谷雨”把春播作物与雨的关系写进了名字。",
@@ -123,6 +135,8 @@ const entries = [
   },
   {
     zh: "立夏",
+    illustration: "terms/lixia.webp",
+    illustrationAlt: ["初夏菜园里新收的蚕豆。", "Freshly picked broad beans in an early-summer garden."],
     en: "Beginning of Summer",
     meaning: [
       "传统夏季从立夏起算。草木生长加快，田野的颜色逐日加深。",
@@ -143,6 +157,8 @@ const entries = [
   },
   {
     zh: "小满",
+    illustration: "terms/xiaoman.webp",
+    illustrationAlt: ["黄淮平原上正在灌浆的青麦穗。", "Green wheat ears fill with grain on the Huang-Huai plain."],
     en: "Grain Buds",
     meaning: [
       "“小满”描绘麦粒开始饱满、尚未熟透的样子。",
@@ -163,6 +179,8 @@ const entries = [
   },
   {
     zh: "芒种",
+    illustration: "terms/mangzhong.webp",
+    illustrationAlt: ["金黄麦田里的收割。", "Harvest in a field of ripe golden wheat."],
     en: "Grain in Ear",
     meaning: [
       "“芒”是麦穗等伸出的细刺。芒种时节，一边收麦，一边赶着播种。",
@@ -183,6 +201,8 @@ const entries = [
   },
   {
     zh: "夏至",
+    illustration: "terms/xiazhi.webp",
+    illustrationAlt: ["北方河滩上迟迟未尽的暮光。", "Late evening light lingers over a northern river."],
     en: "Summer Solstice",
     meaning: [
       "太阳直射点到达北回归线附近。北半球迎来一年中白昼最长的时节。",
@@ -203,6 +223,8 @@ const entries = [
   },
   {
     zh: "小暑",
+    illustration: "summer.webp",
+    illustrationAlt: ["夏日溪畔的荷花。", "Lotus flowers bloom beside a summer stream."],
     en: "Minor Heat",
     meaning: [
       "“暑”指炎热。小暑标出夏热渐盛的阶段。",
@@ -223,6 +245,8 @@ const entries = [
   },
   {
     zh: "大暑",
+    illustration: "terms/dashu.webp",
+    illustrationAlt: ["南方双季稻田里收早稻、插晚稻的景象。", "Early rice harvest and late rice planting in southern China."],
     en: "Major Heat",
     meaning: [
       "“大暑”点出盛夏热势。许多地方的气温高峰落在夏至之后。",
@@ -243,6 +267,8 @@ const entries = [
   },
   {
     zh: "立秋",
+    illustration: "terms/liqiu.webp",
+    illustrationAlt: ["北方玉米田里的初秋晨光。", "Early-autumn morning light on a northern cornfield."],
     en: "Beginning of Autumn",
     meaning: [
       "传统秋季从此开始。白昼已渐短，暑热在许多地方仍会延续。",
@@ -263,6 +289,8 @@ const entries = [
   },
   {
     zh: "处暑",
+    illustration: "terms/chushu.webp",
+    illustrationAlt: ["暑气渐退，稻田里抽出新穗。", "Fresh rice panicles emerge as the heat eases."],
     en: "End of Heat",
     meaning: [
       "“处”在这里有终止的意思。处暑记下暑热渐退的时节。",
@@ -283,6 +311,8 @@ const entries = [
   },
   {
     zh: "白露",
+    illustration: "terms/bailu.webp",
+    illustrationAlt: ["晨露凝在芦苇上，雁群掠过湿地。", "Dew on reeds as migrating geese cross a marsh."],
     en: "White Dew",
     meaning: [
       "晴夜里叶面散热变凉，水汽凝成露珠。清晨的露光给了节气名字。",
@@ -303,6 +333,8 @@ const entries = [
   },
   {
     zh: "秋分",
+    illustration: "landscape.webp",
+    illustrationAlt: ["夕阳下，山谷草木渐染秋金。", "The valley turns gold in the autumn evening light."],
     en: "Autumn Equinox",
     meaning: [
       "太阳自北向南越过天赤道。传统秋季过半，昼夜再次大致等长。",
@@ -323,6 +355,8 @@ const entries = [
   },
   {
     zh: "寒露",
+    illustration: "terms/hanlu.webp",
+    illustrationAlt: ["江南园墙边盛开的秋菊。", "Autumn chrysanthemums beside a Jiangnan garden wall."],
     en: "Cold Dew",
     meaning: [
       "露意更凉，秋意渐深。这个名字让人想到深秋清早的湿冷。",
@@ -343,6 +377,8 @@ const entries = [
   },
   {
     zh: "霜降",
+    illustration: "terms/shuangjiang.webp",
+    illustrationAlt: ["柿树下的红叶覆着薄霜。", "Frost edges fallen leaves beneath a persimmon tree."],
     en: "Frost Descent",
     meaning: [
       "“霜降”写深秋地物表面可能结霜的景象。霜由水汽在寒冷表面直接凝华而成。",
@@ -363,6 +399,8 @@ const entries = [
   },
   {
     zh: "立冬",
+    illustration: "terms/lidong.webp",
+    illustrationAlt: ["北方农家庭院里备贮的秋菜。", "Autumn vegetables gathered for winter in a northern courtyard."],
     en: "Beginning of Winter",
     meaning: [
       "“立”是开始，“冬”有冬藏之意。秋收渐息，传统历法由此入冬。",
@@ -383,6 +421,8 @@ const entries = [
   },
   {
     zh: "小雪",
+    illustration: "winter.webp",
+    illustrationAlt: ["山岭和松枝上落着薄雪。", "A light dusting of snow on mountain ridges and pine branches."],
     en: "Minor Snow",
     meaning: [
       "传统上用“小雪”标记寒意加深、降水可能由雨转雪的时段。",
@@ -403,6 +443,8 @@ const entries = [
   },
   {
     zh: "大雪",
+    illustration: "terms/daxue.webp",
+    illustrationAlt: ["厚雪覆盖北方山村的屋顶和松枝。", "Heavy snow blankets the roofs and pines of a northern village."],
     en: "Major Snow",
     meaning: [
       "“大雪”记下隆冬渐近、部分地区积雪机会增加的季候。",
@@ -423,6 +465,8 @@ const entries = [
   },
   {
     zh: "冬至",
+    illustration: "terms/dongzhi.webp",
+    illustrationAlt: ["冬日低阳让庭院里的测影杆投下长影。", "A low winter sun casts a long shadow from a courtyard gnomon."],
     en: "Winter Solstice",
     meaning: [
       "太阳直射点到达南回归线附近。北半球白昼最短，此后日照时间逐渐增长。",
@@ -443,6 +487,8 @@ const entries = [
   },
   {
     zh: "小寒",
+    illustration: "terms/xiaohan.webp",
+    illustrationAlt: ["冰池旁的蜡梅开出黄色花朵。", "Golden wintersweet blossoms beside a frozen pond."],
     en: "Minor Cold",
     meaning: [
       "“小寒”标记隆冬的一段寒时。在部分地区，小寒也可能是一年最冷的节气。",
@@ -463,6 +509,8 @@ const entries = [
   },
   {
     zh: "大寒",
+    illustration: "terms/dahan.webp",
+    illustrationAlt: ["寒风扫过结冰的北方河面。", "Winter wind sweeps a frozen river in northern China."],
     en: "Major Cold",
     meaning: [
       "大寒是传统顺序中的最后一个节气，写尽岁末寒意，再往前便是立春。",
